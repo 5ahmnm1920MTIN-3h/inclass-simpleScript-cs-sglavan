@@ -15,7 +15,6 @@ public class ComputeNumbers : MonoBehaviour
         float a = float.Parse(ipVarA.text);
         float b = float.Parse(ipVarB.text);
         Debug.Log("in SetResult" + (a - b));
-        //result.text = SubstractNumbers(a, b);
         float resultAB = a - b;
         result.text = resultAB.ToString();
 
@@ -33,18 +32,12 @@ public class ComputeNumbers : MonoBehaviour
     public float MultNumbers(float variableA, float variableB)
     {
         float result = variableA * variableB;
-        //Debug.Log("Test sub" + result.ToString());
         return result;
     }
     public float SubstractNumbers(float variableA, float variableB)
     {
         float result = variableA - variableB;
-        //Debug.Log("Test sub" + result.ToString());
         return result;
     }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }
